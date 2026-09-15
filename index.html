@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Conversor</title>
+</head>
+<body>
+    <img class="logo" src="./assets/logo.gif" alt="Logo-conversor">
+
+    <main>
+        <label>
+            Converter <b>de:</b>
+            <select class="currency-select1">
+                <option value="">Escolha a Moeda Convertida</option>
+                <option value="real1">R$ Real Brasileiro</option>
+                <option value="dolar1">US$ Dolar Americano</option>
+                <option value="euro1">€ Euro</option>
+                <option value="libra1">£ Libra</option>
+                <option value="bitcoin1">₿ Bitcoin</option>
+            </select>
+
+        </label>
+
+        <label>
+            Converter <b>para:</b>
+            <select class="currency-select2"> 
+                <option value="">Escolha a Moeda a Converter</option>
+                <option value="real2">R$ Real Brasileiro</option>
+                <option value="dolar2">US$ Dolar Americano</option>
+                <option value="euro2">€ Euro</option>
+                <option value="libra2">£ Libra</option>
+                <option value="bitcoin2">₿ Bitcoin</option>
+            </select>
+
+        </label>
+
+        <label>
+            <b>Valor</b>
+            <input class="input-currency" type="number" placeholder=" $ 000.000,00">
+
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img class="currency-img1" src="">
+                <p class="currency" id="currency-name1"> - </p>
+                <p class="currency-value-to-convert">$ 0,00</p> 
+                <!--Será o valor inserido no Input-->
+            </div>  
+            <div>
+                <img class="seta-img" src="./assets/seta.png" alt="seta">
+            </div>
+
+            <div class="currency-box">
+                <img class="currency-img2" src="">
+                <p class="currency" id="currency-name2"> - </p>
+                <p class="currency-value-converted">$ 0,00</p>
+                <!--Será o resultado da conversão-->
+            </div>
+        </section>
+    </main>
+    
+
+</body>
+<script src="./scripts.js"></script>
+</html>
+
+<!--
+            
+
+-->
+
+
+<!--
+ - 1. Passo: Selecionar a fonte(tipo de escrita) desejada.
+ - 2. Passo: Importar as imagem principal do site. no caso a logo
+ - 3. Passo: Criar a estrutura do site. No caso as caixas de textos e 
+ botões, inputs e etc. 
+    - No caso acima, se criou uma caixa "main" com um "label" indicando
+    qual moeda se quer converter, em seguida se criou um "select" e 
+    um "option".
+ - 4. Passo: Copiar a Label e tudo dentro para criar um novo select, agora
+ indicando para qual moeda deseja converter.
+-->
